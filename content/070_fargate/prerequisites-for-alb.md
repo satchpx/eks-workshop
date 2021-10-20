@@ -52,9 +52,13 @@ The next step is to create the IAM policy that will be used by the AWS Load Bala
 This policy will be later associated to the Kubernetes Service Account and will allow the controller pods to create and manage the ELB’s resources in your AWS account for you.
 
 ```bash
+cd ~/environment
+curl -o iam_policy.json https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.2.1/docs/install/iam_policy.json
+```
+```bash
 aws iam create-policy \
     --policy-name AWSLoadBalancerControllerIAMPolicy \
-    --policy-document https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/main/docs/install/iam_policy.json
+    --policy-document file://iam_policy.json
 ```
 
 #### Create a IAM role and ServiceAccount for the Load Balancer controller
