@@ -1,9 +1,11 @@
 ---
-title: "Launch EKS"
+title: "[SKIP] Launch EKS"
 date: 2018-08-07T13:34:24-07:00
 weight: 20
 ---
-
+{{% notice info %}}
+The EKS Cluster has already been created for you. Please skip this step and move on to the next. Please feel free to read through the page to learn how the cluster was created.
+{{% /notice %}}
 
 {{% notice warning %}}
 **DO NOT PROCEED** with this step unless you have [validated the IAM role](/020_prerequisites/workspaceiam/#validate-the-iam-role) in use by the Cloud9 IDE. You will not be able to run the necessary kubectl commands in the later modules unless the EKS cluster is built using the IAM role.

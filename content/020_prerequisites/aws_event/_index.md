@@ -2,6 +2,9 @@
 title: "...at an AWS event"
 chapter: true
 weight: 12
+_build:
+  list: false
+  render: false
 ---
 
 ### Running the workshop at an AWS Event

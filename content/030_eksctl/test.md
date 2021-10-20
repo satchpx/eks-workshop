@@ -4,6 +4,13 @@ date: 2018-08-07T13:36:57-07:00
 weight: 30
 ---
 #### Test the cluster:
+
+Generate kubeconfig:
+
+```bash
+aws eks --region ${AWS_REGION} update-kubeconfig --name eksworkshop-eksctl
+```
+
 Confirm your nodes:
 
 ```bash

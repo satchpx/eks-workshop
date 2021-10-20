@@ -2,6 +2,9 @@
 title: "Create a Workspace"
 chapter: false
 weight: 14
+_build:
+  list: false
+  render: false
 ---
 
 {{% notice warning %}}

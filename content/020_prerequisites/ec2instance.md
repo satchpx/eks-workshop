@@ -2,6 +2,9 @@
 title: "Attach the IAM role to your Workspace"
 chapter: false
 weight: 17
+_build:
+  list: false
+  render: false
 ---
 
 1. Click the grey circle button (in top right corner) and select **Manage EC2 Instance**.

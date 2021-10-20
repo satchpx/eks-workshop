@@ -2,6 +2,9 @@
 title: "...on your own"
 chapter: true
 weight: 11
+_build:
+  list: false
+  render: false
 ---
 
 ### Running the workshop on your own
