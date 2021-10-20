@@ -7,6 +7,9 @@ draft: false
 tags:
   - intermediate
   - CON205
+_build:
+  list: false
+  render: false
 ---
 
 ### Fine-Grained IAM Roles for Service Accounts

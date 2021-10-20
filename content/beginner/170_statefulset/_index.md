@@ -5,6 +5,9 @@ weight: 170
 tags:
   - beginner
   - CON206
+_build:
+  list: false
+  render: false
 ---
 
 # Stateful containers using StatefulSets

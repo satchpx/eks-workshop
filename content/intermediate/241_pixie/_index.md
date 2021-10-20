@@ -9,6 +9,9 @@ tags:
   - operations
   - monitoring
   - debugging
+_build:
+  list: false
+  render: false
 ---
 
 # Monitoring using Pixie

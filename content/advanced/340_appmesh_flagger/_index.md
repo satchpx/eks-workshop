@@ -8,6 +8,9 @@ tags:
   - appmesh
   - automatedcanary
   - flagger
+_build:
+  list: false
+  render: false
 ---
 
 [Flagger](https://docs.flagger.app/) is a progressive delivery tool that automates the release process for applications running on Kubernetes. Flagger can be configured to automate the release process for Kubernetes workloads with a custom resource named canary.

@@ -7,6 +7,9 @@ tags:
   - advanced
   - operations
   - servicemesh
+_build:
+  list: false
+  render: false
 ---
 
 ![Service Mesh Architecture](/images/istio/istio-intro1.png)

@@ -4,6 +4,9 @@ chapter: true
 weight: 120
 tags:
   - intermediate
+_build:
+  list: false
+  render: false
 ---
 
 # Securing your cluster with network policies

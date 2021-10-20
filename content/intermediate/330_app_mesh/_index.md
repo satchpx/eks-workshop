@@ -11,6 +11,9 @@ tags:
   - operations
   - servicemesh
   - appmesh
+_build:
+  list: false
+  render: false
 ---
 AWS App Mesh on Amazon EKS
 {{< youtube 9SwFFedBhew >}}

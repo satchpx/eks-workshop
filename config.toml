@@ -3,7 +3,7 @@ ignoreFiles = [ "\\.files/README.md$",  "content/intermediate/260_weave_flux/app
 defaultContentLanguage = "en"
 title = "Amazon EKS Workshop"
 theme = "learn"
-uglyurls = false
+uglyurls = true
 # googleAnalytics = "UA-44634850-4"
 sectionPagesMenu = "main"
 relativeURLs = true
@@ -57,70 +57,70 @@ pygmentsStyle = "tango"
     url = "/mu/"
     weight = -110
 
-[[menu.shortcuts]]
-name = "<i class='fab fa-youtube'></i> Containers from the Couch"
-url = "https://containersfromthecouch.com"
-weight = 1
+# [[menu.shortcuts]]
+# name = "<i class='fab fa-youtube'></i> Containers from the Couch"
+# url = "https://containersfromthecouch.com"
+# weight = 1
 
-[[menu.shortcuts]]
-name = "<i class='fab fa-aws'></i> CON203"
-url = "/tags/CON203"
-weight = 2
+# [[menu.shortcuts]]
+# name = "<i class='fab fa-aws'></i> CON203"
+# url = "/tags/CON203"
+# weight = 2
 
-[[menu.shortcuts]]
-name = "<i class='fab fa-aws'></i> CON205"
-url = "/tags/CON205"
-weight = 3
+# [[menu.shortcuts]]
+# name = "<i class='fab fa-aws'></i> CON205"
+# url = "/tags/CON205"
+# weight = 3
 
-[[menu.shortcuts]]
-name = "<i class='fab fa-aws'></i> CON206"
-url = "/tags/CON206"
-weight = 4
+# [[menu.shortcuts]]
+# name = "<i class='fab fa-aws'></i> CON206"
+# url = "/tags/CON206"
+# weight = 4
 
-[[menu.shortcuts]]
-name = "<i class='fab fa-aws'></i> OPN401"
-url = "/tags/OPN401"
-weight = 5
+# [[menu.shortcuts]]
+# name = "<i class='fab fa-aws'></i> OPN401"
+# url = "/tags/OPN401"
+# weight = 5
 
-[[menu.shortcuts]]
-name = "<i class='fas fa-tags'></i> Tags"
-url = "/tags"
-weight = 6
+# [[menu.shortcuts]]
+# name = "<i class='fas fa-tags'></i> Tags"
+# url = "/tags"
+# weight = 6
 
-[[menu.shortcuts]]
-name = "<i class='fas fa-chalkboard'></i> AppMesh Workshop"
-url = "https://appmeshworkshop.com"
-weight = 7
+# [[menu.shortcuts]]
+# name = "<i class='fas fa-chalkboard'></i> AppMesh Workshop"
+# url = "https://appmeshworkshop.com"
+# weight = 7
 
-[[menu.shortcuts]]
-name = "<i class='fas fa-chalkboard'></i> ECS Workshop"
-url = "https://ecsworkshop.com"
-weight = 8
+# [[menu.shortcuts]]
+# name = "<i class='fas fa-chalkboard'></i> ECS Workshop"
+# url = "https://ecsworkshop.com"
+# weight = 8
 
-[[menu.shortcuts]]
-name = "<i class='fas fa-chalkboard'></i> EKS Networking Workshops"
-url = "https://awsk8snetworkshops.com"
-weight = 9
+# [[menu.shortcuts]]
+# name = "<i class='fas fa-chalkboard'></i> EKS Networking Workshops"
+# url = "https://awsk8snetworkshops.com"
+# weight = 9
 
-[[menu.shortcuts]]
-name = "<i class='fas fa-chalkboard'></i> AWS Partner Workshops"
-url = "https://awsworkshop.io"
-weight = 10
+# [[menu.shortcuts]]
+# name = "<i class='fas fa-chalkboard'></i> AWS Partner Workshops"
+# url = "https://awsworkshop.io"
+# weight = 10
 
-[[menu.shortcuts]]
-name = "<i class='fas fa-chalkboard'></i> EKS Anywhere"
-url = "https://anywhere.eks.amazonaws.com/docs/getting-started/"
-weight = 11
+# [[menu.shortcuts]]
+# name = "<i class='fas fa-chalkboard'></i> EKS Anywhere"
+# url = "https://anywhere.eks.amazonaws.com/docs/getting-started/"
+# weight = 11
 
-[[menu.shortcuts]]
-name = "<i class='fas fa-bookmark'></i> More Resources"
-url = "/more_resources"
-weight = 15
+# [[menu.shortcuts]]
+# name = "<i class='fas fa-bookmark'></i> More Resources"
+# url = "/more_resources"
+# weight = 15
 
-[[menu.shortcuts]]
-name = "<i class='fas fa-users'></i> Authors"
-url = "/authors"
-weight = 20
+# [[menu.shortcuts]]
+# name = "<i class='fas fa-users'></i> Authors"
+# url = "/authors"
+# weight = 20
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-github'></i> GitHub Project"

@@ -7,6 +7,9 @@ draft: false
 chapter: false
 tags:
   - beginner
+_build:
+  list: false
+  render: false
 ---
 
 ### Introduction

@@ -13,6 +13,9 @@ tags:
   - servicemesh
   - appmesh
   - fargate
+_build:
+  list: false
+  render: false
 ---
 
 Meshifying with AWS App Mesh (Part 1)

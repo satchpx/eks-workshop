@@ -5,6 +5,9 @@ draft: false
 chapter: true
 tags:
   - beginner
+_build:
+  list: false
+  render: false
 ---
 
 # Windows containers on EKS

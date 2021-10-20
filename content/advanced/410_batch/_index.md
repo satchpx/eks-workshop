@@ -7,6 +7,9 @@ tags:
   - advanced
   - batch
   - CON205
+_build:
+  list: false
+  render: false
 ---
 
 ### Batch Processing

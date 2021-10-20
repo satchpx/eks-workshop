@@ -8,6 +8,9 @@ tags:
   - intermediate
   - open policy agent
   - opa
+_build:
+  list: false
+  render: false
 ---
 
 # Using Open Policy Agent (OPA) for policy-based control in EKS

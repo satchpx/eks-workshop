@@ -6,6 +6,9 @@ tags:
   - advanced
   - operations
   - crd
+_build:
+  list: false
+  render: false
 ---
 
 # Custom Resource Definition

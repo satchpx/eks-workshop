@@ -7,6 +7,9 @@ tags:
   - intermediate
   - cd
   - gitops
+_build:
+  list: false
+  render: false
 ---
 
 # Continuous Deployment with ArgoCD

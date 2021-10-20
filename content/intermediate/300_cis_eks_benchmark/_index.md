@@ -8,6 +8,9 @@ tags:
   - intermediate
   - cis eks benchmark
   - kube-bench
+_build:
+  list: false
+  render: false
 ---
 
 # CIS EKS Benchmark assessment using kube-bench

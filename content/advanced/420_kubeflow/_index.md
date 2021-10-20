@@ -11,6 +11,9 @@ tags:
   - kubeflow
   - ml
   - OPN401
+_build:
+  list: false
+  render: false
 ---
 
 # Machine Learning using [Kubeflow](https://kubeflow.org/)

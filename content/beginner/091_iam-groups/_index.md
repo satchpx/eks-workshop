@@ -5,6 +5,12 @@ weight: 91
 pre: '<i class="fa fa-film" aria-hidden="true"></i> '
 tags:
   - beginner
+_build:
+  list: false
+  render: false
+_build:
+  list: false
+  render: false
 ---
 # Using IAM Groups to manage Kubernetes cluster access
 

@@ -4,6 +4,9 @@ chapter: true
 weight: 200
 tags:
   - intermediate
+_build:
+  list: false
+  render: false
 ---
 
 # Migrate Workloads to EKS

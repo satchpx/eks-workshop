@@ -6,6 +6,9 @@ draft: true
 tags:
   - intermediate
   - operations
+_build:
+  list: false
+  render: false
 ---
 
 # Backup and Restore EKS using Velero

@@ -6,6 +6,9 @@ weight: 200
 tags:
   - beginner
   - CON206
+_build:
+  list: false
+  render: false
 ---
 
 # Securing Secrets using SealedSecrets

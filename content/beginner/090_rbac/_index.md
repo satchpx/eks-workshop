@@ -6,6 +6,9 @@ pre: '<i class="fa fa-film" aria-hidden="true"></i> '
 tags:
   - beginner
   - CON205
+_build:
+  list: false
+  render: false
 ---
 # Intro to RBAC
 

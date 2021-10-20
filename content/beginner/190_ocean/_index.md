@@ -4,6 +4,9 @@ chapter: true
 weight: 190
 tags:
   - beginner
+_build:
+  list: false
+  render: false
 ---
 
 # Optimized Worker Node Management with Ocean by Spot.io

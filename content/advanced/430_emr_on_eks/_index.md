@@ -9,6 +9,9 @@ tags:
   - advanced
   - emr on eks
   - spark
+_build:
+  list: false
+  render: false
 ---
 # [EMR on EKS](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/emr-eks.html)
 

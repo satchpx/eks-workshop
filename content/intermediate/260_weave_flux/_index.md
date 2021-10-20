@@ -8,6 +8,9 @@ tags:
   - operations
   - ci/cd
   - gitops
+_build:
+  list: false
+  render: false
 ---
 
 # GitOps with Weave Flux

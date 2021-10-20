@@ -8,6 +8,12 @@ tags:
   - cd
   - spinnnaker
   - devops
+_build:
+  list: false
+  render: false
+_build:
+  list: false
+  render: false
 ---
 
 # Continuous Delivery with Spinnaker

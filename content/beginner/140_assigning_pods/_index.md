@@ -6,6 +6,9 @@ pre: '<i class="fa fa-film" aria-hidden="true"></i> '
 tags:
   - intermediate
   - CON203
+_build:
+  list: false
+  render: false
 ---
 
 # Assigning Pods to Nodes

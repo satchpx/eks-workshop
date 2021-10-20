@@ -6,6 +6,9 @@ pre: '<i class="fa fa-film" aria-hidden="true"></i> '
 tags:
   - beginner
   - CON203
+_build:
+  list: false
+  render: false
 ---
 
 # Deploy the Kubernetes Dashboard

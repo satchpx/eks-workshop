@@ -5,6 +5,9 @@ weight: 160
 pre: '<i class="fa fa-film" aria-hidden="true"></i> '
 tags:
   - intermediate
+_build:
+  list: false
+  render: false
 ---
 
 # Advanced VPC Networking with EKS

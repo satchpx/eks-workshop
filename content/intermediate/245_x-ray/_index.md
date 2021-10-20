@@ -8,6 +8,9 @@ tags:
   - operations
   - monitoring
   - CON205
+_build:
+  list: false
+  render: false
 ---
 
 # Tracing with X-Ray

@@ -6,6 +6,9 @@ pre: '<i class="fa fa-film" aria-hidden="true"></i> '
 tags:
   - beginner
   - CON206
+_build:
+  list: false
+  render: false
 ---
 
 # Deploying Stateful Microservices with AWS EFS
