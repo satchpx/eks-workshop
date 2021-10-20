@@ -15,8 +15,6 @@ tags:
 
 # Introduction to Kubernetes
 
-{{< youtube -zmUxsrYw2I >}}
-
 A walkthrough of basic Kubernetes concepts.
 
 ![Title Image](/images/introduction/eks-product-page.png)

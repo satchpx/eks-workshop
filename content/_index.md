@@ -1,5 +1,5 @@
 ---
-title: "Amazon EKS Workshop"
+title: "Startup ISV <> Amazon EKS Workshop"
 chapter: true
 weight: 1
 ---

@@ -10,8 +10,6 @@ tags:
 
 # Implement AutoScaling with HPA and CA
 
-{{< youtube emjxGvGhWm0 >}}
-
 In this Chapter, we will show patterns for scaling your worker nodes and applications deployments automatically.
 
 Automatic scaling in K8s comes in two forms:
