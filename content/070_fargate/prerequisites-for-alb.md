@@ -25,7 +25,7 @@ helm version
 ```
 
 {{% notice info %}}
-If `Helm` is not found, see [installing helm](/beginner/060_helm/helm_intro/install/index.html) for instructions.
+If `Helm` is not found, see [installing helm](/050_scaling/install.html) for instructions.
 {{% /notice %}}
 
 #### Create IAM OIDC provider
