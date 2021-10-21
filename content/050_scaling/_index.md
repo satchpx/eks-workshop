@@ -3,9 +3,6 @@ title: "3. Autoscaling our Applications and Clusters"
 chapter: true
 weight: 50
 pre: '<i class="fa fa-film" aria-hidden="true"></i> '
-tags:
-  - beginner
-  - CON205
 ---
 
 # Implement AutoScaling with HPA and CA

@@ -3,9 +3,6 @@ title: "8. Patching/Upgrading your EKS Cluster"
 chapter: true
 weight: 120
 draft: false
-tags:
-  - intermediate
-  - operations
 ---
 
 # Patching/Upgrading your EKS Cluster

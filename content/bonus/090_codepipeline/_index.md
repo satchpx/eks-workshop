@@ -3,11 +3,6 @@ title: "6. CI/CD with CodePipeline"
 chapter: true
 weight: 90
 draft: false
-tags:
-  - advanced
-  - operations
-  - ci/cd
-  - CON205
 ---
 
 # CI/CD with CodePipeline

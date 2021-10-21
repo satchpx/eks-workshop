@@ -2,11 +2,6 @@
 title: "7. EKS CloudWatch Container Insights"
 chapter: true
 weight: 100
-tags:
-  - intermediate
-  - operations
-  - monitoring
-  - CON206
 ---
 
 In this chapter we will learn and leverage the new CloudWatch Container Insights to see how you can use native CloudWatch features to monitor your EKS Cluster performance.
