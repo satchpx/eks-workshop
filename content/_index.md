@@ -4,6 +4,8 @@ chapter: true
 weight: 1
 ---
 
+### Amazon EKS Workshop for Startups - 10/22/2021
+
 {{% notice note %}}
 For even more container related content, check out our new show:
 [Containers from the Couch](https://containersfromthecouch.com) 
