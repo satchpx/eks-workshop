@@ -101,10 +101,6 @@ secrets:
 - name: aws-load-balancer-controller-token-8pnww
 {{< /output >}}
 
-{{% notice info %}}
-For more information on IAM Roles for Service Accounts [follow this link](/beginner/110_irsa/).
-{{% /notice %}}
-
 #### Install the TargetGroupBinding CRDs
 
 ```bash
@@ -113,7 +109,7 @@ kubectl apply -k github.com/aws/eks-charts/stable/aws-load-balancer-controller//
 
 #### Deploy the Helm chart from the Amazon EKS charts repo
 
-Fist, We will verify if the AWS Load Balancer Controller version has beed set
+Fist, We will verify if the AWS Load Balancer Controller version has been set
 
 ```bash
 if [ ! -x ${LBC_VERSION} ]

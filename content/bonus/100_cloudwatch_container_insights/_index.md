@@ -15,7 +15,7 @@ You can use CloudWatch Container Insights to collect, aggregate, and summarize m
 
 {{% notice note %}}
 In order to complete this lab you will need to have a working EKS Cluster, With `Helm` installed.
-You will need to have completed the [Start the Workshop...](/020_prerequisites/) through  [Launching your cluster with Eksctl](/030_eksctl/) and [Install Helm CLI](/beginner/060_helm/helm_intro/install/) as well.
+You will need to have completed the [Start the Workshop...](/020_prerequisites.html) through  [Launching your cluster with Eksctl](/030_eksctl.html) and [Install Helm CLI](/050_scaling/install.html) as well.
 {{% /notice %}}
 
 {{% notice tip%}}
