@@ -53,7 +53,7 @@ This policy will be later associated to the Kubernetes Service Account and will 
 
 ```bash
 cd ~/environment
-curl -o iam_policy.json https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.2.1/docs/install/iam_policy.json
+curl -o iam-policy.json https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/main/docs/install/iam_policy.json
 ```
 ```bash
 aws iam create-policy \
@@ -66,6 +66,7 @@ aws iam create-policy \
 Next, create a Kubernetes Service Account by executing the following command
 
 ```bash
+export ACCOUNT_ID=$(aws sts get-caller-identity --output text --query Account)
 eksctl create iamserviceaccount \
   --cluster eksworkshop-eksctl \
   --namespace kube-system \
@@ -73,6 +74,12 @@ eksctl create iamserviceaccount \
   --attach-policy-arn arn:aws:iam::${ACCOUNT_ID}:policy/AWSLoadBalancerControllerIAMPolicy \
   --override-existing-serviceaccounts \
   --approve
+```
+OR use awscli to attach the IAM policy to an existing role
+```
+aws iam attach-role-policy \
+--policy-arn arn:aws:iam::${ACCOUNT_ID}:policy/AWSLoadBalancerControllerIAMPolicy \
+--role-name role-name
 ```
 
 The above command deploys a CloudFormation template that creates an IAM role and attaches the IAM policy to it.
@@ -100,6 +107,48 @@ metadata:
 secrets:
 - name: aws-load-balancer-controller-token-8pnww
 {{< /output >}}
+
+#### Install cert-manager
+```
+kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.6.0/cert-manager.yaml
+```
+
+#### Install LBC 
+Download the manifest
+```
+curl -Lo ingress-controller.yaml https://github.com/kubernetes-sigs/aws-load-balancer-controller/releases/download/v2.4.4/v2_4_4_full.yaml
+```
+
+Edit the cluster-name:
+```
+spec:
+    containers:
+    - args:
+        - --cluster-name=eksworkshop-eksctl
+        - --ingress-class=alb
+```
+
+Update the ServiceAccount spec to add annotations:
+```
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  labels:
+    app.kubernetes.io/component: controller
+    app.kubernetes.io/name: aws-load-balancer-controller
+  annotations:                                                                        # Add the annotations line
+    eks.amazonaws.com/role-arn: arn:aws:iam::111122223333:role/role-name              # Add the IAM role
+  name: aws-load-balancer-controller
+  namespace: kube-system
+```
+Note: Replace 111122223333 with your AWS account ID and role-name with your IAM role name.
+
+Deploy AWS Load Balancer Controller
+```
+kubectl apply -f ingress-controller.yaml
+```
+
+### <-- SKIP EVERYTHING BELOW -->
 
 #### Install the TargetGroupBinding CRDs
 

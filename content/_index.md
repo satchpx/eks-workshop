@@ -4,7 +4,7 @@ chapter: true
 weight: 1
 ---
 
-### Amazon EKS Workshop for Startups - 10/22/2021
+### Amazon EKS Workshop for Startups
 
 {{% notice note %}}
 For even more container related content, check out our new show:

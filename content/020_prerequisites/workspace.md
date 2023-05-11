@@ -58,6 +58,7 @@ If you are [at an AWS event](https://eksworkshop.com/020_prerequisites/aws_event
 {{% /notice %}}
 
 ```sh
+yum install -y jq
 export ACCOUNT_ID=$(aws sts get-caller-identity --output text --query Account)
 export AWS_REGION=$(curl -s 169.254.169.254/latest/dynamic/instance-identity/document | jq -r '.region')
 export AZS=($(aws ec2 describe-availability-zones --query 'AvailabilityZones[].ZoneName' --output text --region $AWS_REGION))
@@ -89,6 +90,7 @@ aws sts get-caller-identity --query Arn | grep eksworkshop-admin -q && echo "IAM
 ```
 
 If the IAM role is not valid, <span style="color: red;">**DO NOT PROCEED**</span>. Go back and confirm the steps on this page.
+Create an IAM role called `eksworkshop-admin` for EC2 service with `Administrator Access` -> Attach this role to the Cloud9 EC2 instance.
 
 {{% notice info %}}
 If you intend to run all the sections in this workshop, it will be useful to have more storage available for all the repositories and tests.

@@ -1,11 +1,14 @@
 ---
 title: "Patching/Upgrading your EKS Cluster"
 chapter: true
-weight: 320
+weight: 80
 draft: false
 tags:
   - intermediate
   - operations
+_build:
+  list: false
+  render: false
 ---
 
 # Patching/Upgrading your EKS Cluster

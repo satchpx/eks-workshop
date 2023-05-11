@@ -37,6 +37,23 @@ If you do see the correct role, proceed to next step to create an EKS cluster.
 `eksctl` version must be 0.38.0 or above to deploy EKS 1.19, [click here](/030_eksctl/prerequisites) to get the latest version.
 {{% /notice %}}
 
+Create a CMK for the EKS cluster to use when encrypting your Kubernetes secrets:
+```
+aws kms create-alias --alias-name alias/eksworkshop --target-key-id $(aws kms create-key --query KeyMetadata.Arn --output text)
+```
+
+Let’s retrieve the ARN of the CMK to input into the create cluster command.
+```
+export MASTER_ARN=$(aws kms describe-key --key-id alias/eksworkshop --query KeyMetadata.Arn --output text)
+```
+
+We set the MASTER_ARN environment variable to make it easier to refer to the KMS key later.
+
+Now, let’s save the MASTER_ARN environment variable into the bash_profile
+```
+echo "export MASTER_ARN=${MASTER_ARN}" | tee -a ~/.bash_profile
+```
+
 Create an eksctl deployment file (eksworkshop.yaml) use in creating your cluster using the following syntax:
 
 ```bash
