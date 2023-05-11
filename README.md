@@ -1,7 +1,8 @@
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/aws-samples/eks-workshop) 
 
-# eksworkshop
+# eksworkshop for Startups
 
+### Access a deployed version [here](https://d21oah9s4ool7v.cloudfront.net/)
 ### Setup:
 #### Using GitPod.io:
 
