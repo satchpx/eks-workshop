@@ -7,7 +7,7 @@ weight: 50
 ```bash
 kubectl delete -f ~/environment/cluster-autoscaler/nginx.yaml
 
-kubectl delete -f https://www.eksworkshop.com/beginner/080_scaling/deploy_ca.files/cluster-autoscaler-autodiscover.yaml
+kubectl delete -f cluster-autoscaler-autodiscover.yaml
 
 eksctl delete iamserviceaccount \
   --name cluster-autoscaler \
