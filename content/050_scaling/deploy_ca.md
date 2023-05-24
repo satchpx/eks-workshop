@@ -134,7 +134,8 @@ Events:              <none>
 Deploy the Cluster Autoscaler to your cluster with the following command.
 
 ```bash
-kubectl apply -f https://www.eksworkshop.com/beginner/080_scaling/deploy_ca.files/cluster-autoscaler-autodiscover.yaml
+wget https://archive.eksworkshop.com/beginner/080_scaling/deploy_ca.files/cluster-autoscaler-autodiscover.yaml --no-check-certificate
+kubectl apply -f cluster-autoscaler-autodiscover.yaml
 ```
 
 To prevent CA from removing nodes where its own pod is running, we will add the `cluster-autoscaler.kubernetes.io/safe-to-evict` annotation to its deployment with the following command

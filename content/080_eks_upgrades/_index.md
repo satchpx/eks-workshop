@@ -8,7 +8,7 @@ tags:
   - operations
 _build:
   list: false
-  render: false
+  render: falseNat
 ---
 
 # Patching/Upgrading your EKS Cluster
