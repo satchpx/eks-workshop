@@ -53,7 +53,7 @@ This policy will be later associated to the Kubernetes Service Account and will 
 
 ```bash
 cd ~/environment
-curl -o iam-policy.json https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/main/docs/install/iam_policy.json
+curl -o iam_policy.json https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/main/docs/install/iam_policy.json
 ```
 ```bash
 aws iam create-policy \
