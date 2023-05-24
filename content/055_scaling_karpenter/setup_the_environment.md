@@ -105,15 +105,9 @@ eksctl create iamserviceaccount \
 ```
 
 {{% notice note %}}
-This step may take up to 2 minutes. eksctl will create and deploy a CloudFormation stack that defines the role and create the kubernetes resources that define the Karpenter `serviceaccount` and the `karpenter` namespace that we willuse during the workshop. You can also check in the **CloudFormation** console, the resources this stack creates.
+This step may take up to 2 minutes. eksctl will create and deploy a CloudFormation stack that defines the role only and not create the kubernetes resources that define the Karpenter `serviceaccount` and the `karpenter` namespace that we willuse during the workshop. The serviceaccount will be created during karpenter installation in the helm command. You can also check in the **CloudFormation** console, the resources this stack creates.
 {{% /notice %}}
 
-
-You can confirm the service account has been created by running:
-
-```bash
-kubectl get serviceaccounts --namespace karpenter
-```
 
 ### Create the EC2 Spot Linked Role
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-requests.html#service-linked-roles-spot-instance-requests

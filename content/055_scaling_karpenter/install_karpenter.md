@@ -10,10 +10,6 @@ In this section we will install Karpenter and learn how to configure a default [
 
 We will use helm to deploy Karpenter to the cluster. 
 
-{{% notice info %}}
-We will install Karpenter v0.4.3 which is compatible with Kubernetes 1.19 used in this workshop. Karpenter v0.5.x only supports Kubernetes 1.2x and therefore you would need to upgrade your cluster to Kubernetes 1.2x.
-{{% /notice %}}
-
 ```bash
 export KARPENTER_IAM_ROLE_ARN="arn:aws:iam::${ACCOUNT_ID}:role/${CLUSTER_NAME}-karpenter"
 export CLUSTER_ENDPOINT="$(aws eks describe-cluster --name ${CLUSTER_NAME} --query "cluster.endpoint" --output text)"
